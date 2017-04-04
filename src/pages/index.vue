@@ -8,7 +8,7 @@
           <h3>{{ product.title}}</h3>
           <ul>
             <li v-for="item in product.list">
-              <a :href="item.url">{{ item.name }}</a>
+              <router-link :to="item.url">{{ item.name }}</router-link>
               <span v-if="item.hot" class="hot-tag">HOT</span>
             </li>
           </ul>

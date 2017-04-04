@@ -1,14 +1,15 @@
 <template>
   <div class="slide-show" @mouseover="clearInv" @mouseout="runInv">
     <div class="slide-img">
-      <a :href="slides[nowIndex].href">
+      <router-link :to="slides[nowIndex].href">
         <transition name="slide-trans">
           <img v-if="isShow" :src="slides[nowIndex].src">
         </transition>
         <transition name="slide-trans-old">
           <img v-if="!isShow" :src="slides[nowIndex].src">
         </transition>
-      </a>
+      </router-link>
+      <router-view></router-view>
     </div>
     <h2>{{ slides[nowIndex].title }}</h2>
     <ul class="slide-pages">
@@ -48,7 +49,7 @@ export default {
       }
       else {
         return this.nowIndex - 1
-      } 
+      }
     },
     nextIndex () {
       if (this.nowIndex === this.slides.length - 1) {
