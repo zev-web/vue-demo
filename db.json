@@ -1,0 +1,34 @@
+{
+  "getNewsList": [
+    {
+      "id": 1,
+      "title": "各品牌同系列兄弟手机 高颜值金属手机推荐",
+      "url": "http://www.sina.com.cn/"
+    },
+    {
+      "id": 2,
+      "title": "内外兼修智能机指南 正面指纹识别手机盘点",
+      "url": "http://www.sina.com.cn/"
+    },
+    {
+      "id": 3,
+      "title": " 新闻条4广告发布",
+      "url": "http://www.sina.com.cn/"
+    },
+    {
+      "id": 4,
+      "title": "新闻条4广告发布",
+      "url": "http://www.sina.com.cn/"
+    }
+  ],
+  "login": {
+    "username": "zeven",
+    "userId": 123123
+  },
+  "getPrice": {
+    "amount": 678
+  },
+  "createOrder": {
+    "orderId": "6djk979"
+  }
+}
